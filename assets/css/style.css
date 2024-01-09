@@ -41,6 +41,22 @@ input, select, button, textarea {
     color: #fdfdfd;
 }
 
+.section-heading {
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -2.24px;
+    color: var(--heading-color);
+}
+
+.section-desc {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    color: var(--text-color);
+}
+
 /* Header */
 .header__container {
     width: calc(100% - 15px);
@@ -196,3 +212,77 @@ input, select, button, textarea {
 }
 
 /* Hero */
+.hero {
+    margin-top: 44px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+}
+
+.hero__media {
+    position: relative;
+    width: 100%;
+}
+
+.hero__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.media-img__dash {
+    position: absolute;
+    top: -62px;
+    right: -200px;
+    width: 835px;
+    height: 570px;
+    z-index: -1;
+}
+
+.hero__heading {
+    font-size: 7rem;
+    line-height: 0.95;
+    letter-spacing: -3.2px;
+}
+
+.hero__actions {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__cta-link {
+    margin-left: 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+    color: var(--heading-color);
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+}
+
+.hero__socials {
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__socials-desc {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.87;
+    color: var(--text-color);
+}
+
+.hero__social-icon {
+    margin: 0 15px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(8, 4, 21, 0.1);
+    border-radius: 50%;
+    fill: var(--heading-color);
+}
