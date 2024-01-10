@@ -243,10 +243,6 @@ input, select, button, textarea {
     z-index: -1;
 }
 
-.hero__content {
-    position: relative;
-}
-
 .hero__heading {
     font-size: 7rem;
     line-height: 0.95;
@@ -290,14 +286,6 @@ input, select, button, textarea {
     border: 1px solid rgba(8, 4, 21, 0.1);
     border-radius: 50%;
     fill: var(--heading-color);
-}
-
-.content-img__dash {
-    position: absolute;
-    bottom: -115px;
-    right: -220px;
-    width: 340px;
-    height: 250px;
 }
 
 @media (max-width: 575.98px) {
@@ -362,10 +350,6 @@ input, select, button, textarea {
         height: 500px;
         top: -80px;
         right: -30px;
-    }
-
-    .content-img__dash {
-        display: none;
     }
 }
 
