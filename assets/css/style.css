@@ -363,6 +363,10 @@ input, select, button, textarea {
         top: -80px;
         right: -30px;
     }
+
+    .content-img__dash {
+        display: none;
+    }
 }
 
 /* Client */
@@ -380,7 +384,7 @@ input, select, button, textarea {
 .client__heading::before {
     content: "";
     width: 86px;
-    height: 1px;
+    height: 2px;
     border-radius: 2px;
     background-color: var(--bg-color);
     margin: 22px 12px 0 0;
@@ -416,4 +420,32 @@ input, select, button, textarea {
 
 .item-wb, .item-cloud {
     text-wrap: nowrap;
+}
+
+@media (max-width: 575.98px) {
+    .client {
+        margin-top: 120px;
+    }
+
+    .client__heading {
+        text-align: center;
+        font-size: 2.8rem;
+        line-height: 1.21;
+        letter-spacing: -1.12px;
+        flex-direction: column;
+        width: 168px;
+        margin: 0 auto;
+    }
+
+    .client__heading::before {
+        width: 48px;
+        margin: 0 auto;
+    }
+
+    .client__list {
+        margin-top: 42px;
+        flex-wrap: wrap;
+        row-gap: 35px;
+        justify-content: center;
+    }
 }
