@@ -3,7 +3,7 @@
 }
 
 :root {
-    --bg-color: rgb(93, 59, 238);
+    --bg-color: #5d3bee;
     --heading-color: #080415;
     --text-color: #51586A;
 }
@@ -363,4 +363,57 @@ input, select, button, textarea {
         top: -80px;
         right: -30px;
     }
+}
+
+/* Client */
+.client {
+    margin-top: 100px;
+}
+
+.client__heading {
+    font-size: 4.2rem;
+    line-height: 1.19;
+    letter-spacing: -1.68px;
+    display: flex;
+}
+
+.client__heading::before {
+    content: "";
+    width: 86px;
+    height: 1px;
+    border-radius: 2px;
+    background-color: var(--bg-color);
+    margin: 22px 12px 0 0;
+}
+
+.client__list,
+.item-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.client__list {
+    column-gap: 35px;
+}
+
+.client__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.client__img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.client__item-name {
+    margin-left: 12px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.item-wb, .item-cloud {
+    text-wrap: nowrap;
 }
