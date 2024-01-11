@@ -1143,3 +1143,57 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 40px;
     }
 }
+
+/* Talk */
+.talk {
+    margin-top: 140px;
+}
+
+.talk__wrap {
+    position: relative;
+    background-color: #FBFAFF;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.talk__inner {
+    padding: 20px 0 60px;
+    text-align: center;
+}
+
+.talk__desc {
+    width: 570px;
+    margin: 20px auto 0;
+}
+
+.talk__btn {
+    margin-top: 30px;
+}
+
+.talk__dash {
+    position: absolute;
+    z-index: -1;
+}
+
+.talk-left, .talk-right {
+    width: 400px;
+    height: 290px;
+}
+
+.talk-left {
+    left: -170px;
+    bottom: -100px;
+}
+
+.talk-right {
+    top: -100px;
+    right: -150px;
+}
+
+.talk-center {
+    width: 535px;
+    height: 344px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
