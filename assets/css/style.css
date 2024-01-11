@@ -966,13 +966,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 90%;
 }
 
-.question__item {
+.question-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding-bottom: 20px;
     border-bottom: 2px solid var(--heading-color);
+    transition: border-color 0.25s linear;
 }
 
 .question__item + .question__item {
@@ -1013,20 +1014,24 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
-.question__input:checked ~ .question__btn .question__switch-label .question-icon:nth-of-type(1) {
+.question__input:checked ~ .question-wrap .question__btn .question__switch-label .question-icon:nth-of-type(1) {
     display: none;
 }
 
-.question__input:checked ~ .question__btn .question__switch-label .question-icon:nth-of-type(2) {
+.question__input:checked ~ .question-wrap .question__btn .question__switch-label .question-icon:nth-of-type(2) {
     display: block;
 }
 
-.question__input:checked ~ .question__btn .question__switch-label .question-icon:nth-of-type(2) {
+.question__input:checked ~ .question-wrap .question__btn .question__switch-label .question-icon:nth-of-type(2) {
     fill: var(--bg-color);
 }
 
 .question__input:checked + .question-wrap .question-ask {
     color: var(--bg-color);
+}
+
+.question__input:checked ~ .question-wrap {
+    border-color: var(--bg-color);
 }
 
 .question__input:checked + .question-wrap .question-answer {
