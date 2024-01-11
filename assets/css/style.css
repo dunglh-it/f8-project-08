@@ -1157,7 +1157,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .talk__inner {
-    padding: 20px 0 60px;
+    padding: 50px 0 60px;
     text-align: center;
 }
 
@@ -1196,4 +1196,23 @@ h1, h2, h3, h4, h5, h6 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 575.98px) {
+    .talk {
+        margin-top: 120px;
+    }
+
+    .talk__inner {
+        padding: 35px 0;
+    }
+
+    .talk-left, .talk-right {
+        display: none;
+    }
+
+    .talk-center {
+        width: 735px;
+        height: 544px;
+    }
 }
